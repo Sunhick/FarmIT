@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 /**
@@ -28,6 +29,16 @@ public class MainActivity extends Activity {
                 Log.d(TAG, "Starting Register user activity here");
                 Intent registerUser = new Intent(MainActivity.this, RegisterActivity.class);
                 startActivity(registerUser);
+            }
+        });
+
+        Button signin = findViewById(R.id.signin);
+        signin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Log.d(TAG, "Starting video list activity");
+                Intent videos = new Intent(MainActivity.this, VideoListActivity.class);
+                startActivity(videos);
             }
         });
     }

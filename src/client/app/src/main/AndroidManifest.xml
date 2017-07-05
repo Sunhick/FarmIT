@@ -27,7 +27,9 @@
         <service
             android:name=".comm.CommunicationService"
             android:enabled="true"
-            android:exported="true"></service>
+            android:exported="true" />
+
+        <activity android:name=".VideoListActivity"></activity>
     </application>
 
 </manifest>

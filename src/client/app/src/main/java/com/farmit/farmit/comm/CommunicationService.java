@@ -4,9 +4,10 @@ import android.app.Service;
 import android.content.Intent;
 import android.os.Binder;
 import android.os.IBinder;
+import android.util.Log;
 
 public class CommunicationService extends Service implements Communication {
-
+    private static String TAG = CommunicationService.class.getSimpleName();
     private final IBinder binder = new CommunicationBinder();
     private TcpChannel connection;
 
@@ -24,8 +25,7 @@ public class CommunicationService extends Service implements Communication {
 
     @Override
     public IBinder onBind(Intent intent) {
-        // TODO: Return the communication channel to the service.
-        throw new UnsupportedOperationException("Not yet implemented");
+        return binder;
     }
 
     @Override
@@ -44,7 +44,10 @@ public class CommunicationService extends Service implements Communication {
      */
     @Override
     public void sendMessage(String msg) {
-
+        // Log.d(TAG, msg);
+        if (connection != null) {
+            connection.sendMessage(msg);
+        }
     }
 
     /**

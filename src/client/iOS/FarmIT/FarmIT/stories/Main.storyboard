@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="NgD-GI-hL0">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--FarmIT-->
+        <scene sceneID="wb4-iI-Ezt">
+            <objects>
+                <viewController storyboardIdentifier="Main" useStoryboardIdentifierAsRestorationIdentifier="YES" id="a4j-PP-j27" customClass="MainViewController" customModule="FarmIT" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="5yI-nl-lbd"/>
+                        <viewControllerLayoutGuide type="bottom" id="OpS-PT-dVO"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dhO-W4-MIV">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="3oU-Gm-QUi">
+                                <rect key="frame" x="39.5" y="273.5" width="296" height="120.5"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ajj-2U-V6E">
+                                        <rect key="frame" x="0.0" y="0.0" width="296" height="30"/>
+                                        <state key="normal" title="Login"/>
+                                        <connections>
+                                            <segue destination="JNM-CQ-QxF" kind="show" id="ZRG-h7-Gac"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AaR-Hk-R22">
+                                        <rect key="frame" x="0.0" y="50" width="296" height="30"/>
+                                        <state key="normal" title="Sign up"/>
+                                        <connections>
+                                            <segue destination="oaV-FF-HRX" kind="show" id="M8P-nT-fil"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TEST design only. Will modify this later" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t2R-wD-EqJ">
+                                        <rect key="frame" x="0.0" y="100" width="296" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="3oU-Gm-QUi" firstAttribute="centerX" secondItem="dhO-W4-MIV" secondAttribute="centerX" id="154-tv-Qbs"/>
+                            <constraint firstItem="3oU-Gm-QUi" firstAttribute="centerY" secondItem="dhO-W4-MIV" secondAttribute="centerY" id="jis-wm-5gq"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="FarmIT" id="E3U-rB-69A"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0tO-UF-4Ie" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1399.2" y="-225.33733133433284"/>
+        </scene>
+        <!--Login-->
+        <scene sceneID="3gx-Sh-H7G">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="Login" storyboardName="Login" id="JNM-CQ-QxF" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="y02-SX-Gtc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2485" y="-527"/>
+        </scene>
+        <!--Register-->
+        <scene sceneID="ONC-jQ-gmg">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="Register" storyboardName="Register" id="oaV-FF-HRX" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kWT-V1-di4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2528" y="-327"/>
+        </scene>
+        <!--FarmIT-->
+        <scene sceneID="30B-xt-Ajm">
+            <objects>
+                <navigationController title="FarmIT" automaticallyAdjustsScrollViewInsets="NO" id="NgD-GI-hL0" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="VZx-vC-nTc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="a4j-PP-j27" kind="relationship" relationship="rootViewController" id="c6u-nK-8bV"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CzK-Rb-fHf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="460" y="-225.33733133433284"/>
+        </scene>
+    </scenes>
+</document>

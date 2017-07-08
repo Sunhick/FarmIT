@@ -8,12 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		A3EC3FDF1F117968009C96B2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3EC3FDE1F117968009C96B2 /* AppDelegate.swift */; };
-		A3EC3FE11F117968009C96B2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3EC3FE01F117968009C96B2 /* ViewController.swift */; };
-		A3EC3FE41F117968009C96B2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3EC3FE21F117968009C96B2 /* Main.storyboard */; };
 		A3EC3FE61F117968009C96B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3EC3FE51F117968009C96B2 /* Assets.xcassets */; };
 		A3EC3FE91F117968009C96B2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3EC3FE71F117968009C96B2 /* LaunchScreen.storyboard */; };
 		A3EC3FF41F117968009C96B2 /* FarmITTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3EC3FF31F117968009C96B2 /* FarmITTests.swift */; };
 		A3EC3FFF1F117968009C96B2 /* FarmITUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3EC3FFE1F117968009C96B2 /* FarmITUITests.swift */; };
+		A3EC40121F117AAA009C96B2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3EC40111F117AAA009C96B2 /* Main.storyboard */; };
+		A3EC40141F117B35009C96B2 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3EC40131F117B35009C96B2 /* Login.storyboard */; };
+		A3EC40161F117B67009C96B2 /* LoginIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3EC40151F117B67009C96B2 /* LoginIntent.swift */; };
+		A3EC40181F117BAC009C96B2 /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3EC40171F117BAC009C96B2 /* LoginService.swift */; };
+		A3EC401A1F117BD8009C96B2 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3EC40191F117BD8009C96B2 /* MainViewController.swift */; };
+		A3EC401C1F117BF2009C96B2 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3EC401B1F117BF2009C96B2 /* LoginViewController.swift */; };
+		A3EC401E1F117E6E009C96B2 /* Register.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3EC401D1F117E6E009C96B2 /* Register.storyboard */; };
+		A3EC40201F117FAF009C96B2 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3EC401F1F117FAF009C96B2 /* RegisterViewController.swift */; };
+		A3EC40221F117FCB009C96B2 /* Intent.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3EC40211F117FCB009C96B2 /* Intent.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,8 +43,6 @@
 /* Begin PBXFileReference section */
 		A3EC3FDB1F117968009C96B2 /* FarmIT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FarmIT.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3EC3FDE1F117968009C96B2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A3EC3FE01F117968009C96B2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		A3EC3FE31F117968009C96B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A3EC3FE51F117968009C96B2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A3EC3FE81F117968009C96B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A3EC3FEA1F117968009C96B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -47,6 +52,15 @@
 		A3EC3FFA1F117968009C96B2 /* FarmITUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FarmITUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3EC3FFE1F117968009C96B2 /* FarmITUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FarmITUITests.swift; sourceTree = "<group>"; };
 		A3EC40001F117968009C96B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A3EC40111F117AAA009C96B2 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = stories/Main.storyboard; sourceTree = "<group>"; };
+		A3EC40131F117B35009C96B2 /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Login.storyboard; path = stories/Login.storyboard; sourceTree = "<group>"; };
+		A3EC40151F117B67009C96B2 /* LoginIntent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginIntent.swift; path = Intents/LoginIntent.swift; sourceTree = "<group>"; };
+		A3EC40171F117BAC009C96B2 /* LoginService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginService.swift; path = models/LoginService.swift; sourceTree = "<group>"; };
+		A3EC40191F117BD8009C96B2 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainViewController.swift; path = controllers/MainViewController.swift; sourceTree = "<group>"; };
+		A3EC401B1F117BF2009C96B2 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = controllers/LoginViewController.swift; sourceTree = "<group>"; };
+		A3EC401D1F117E6E009C96B2 /* Register.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Register.storyboard; path = stories/Register.storyboard; sourceTree = "<group>"; };
+		A3EC401F1F117FAF009C96B2 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RegisterViewController.swift; path = controllers/RegisterViewController.swift; sourceTree = "<group>"; };
+		A3EC40211F117FCB009C96B2 /* Intent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Intent.swift; path = Intents/Intent.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,9 +111,12 @@
 		A3EC3FDD1F117968009C96B2 /* FarmIT */ = {
 			isa = PBXGroup;
 			children = (
+				A3EC40101F117A84009C96B2 /* Intents */,
+				A3EC400F1F117A76009C96B2 /* stories */,
+				A3EC400E1F117A6E009C96B2 /* models */,
+				A3EC400D1F117A3E009C96B2 /* views */,
+				A3EC400C1F1179FD009C96B2 /* controllers */,
 				A3EC3FDE1F117968009C96B2 /* AppDelegate.swift */,
-				A3EC3FE01F117968009C96B2 /* ViewController.swift */,
-				A3EC3FE21F117968009C96B2 /* Main.storyboard */,
 				A3EC3FE51F117968009C96B2 /* Assets.xcassets */,
 				A3EC3FE71F117968009C96B2 /* LaunchScreen.storyboard */,
 				A3EC3FEA1F117968009C96B2 /* Info.plist */,
@@ -123,6 +140,50 @@
 				A3EC40001F117968009C96B2 /* Info.plist */,
 			);
 			path = FarmITUITests;
+			sourceTree = "<group>";
+		};
+		A3EC400C1F1179FD009C96B2 /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A3EC40191F117BD8009C96B2 /* MainViewController.swift */,
+				A3EC401B1F117BF2009C96B2 /* LoginViewController.swift */,
+				A3EC401F1F117FAF009C96B2 /* RegisterViewController.swift */,
+			);
+			name = controllers;
+			sourceTree = "<group>";
+		};
+		A3EC400D1F117A3E009C96B2 /* views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = views;
+			sourceTree = "<group>";
+		};
+		A3EC400E1F117A6E009C96B2 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				A3EC40171F117BAC009C96B2 /* LoginService.swift */,
+			);
+			name = models;
+			sourceTree = "<group>";
+		};
+		A3EC400F1F117A76009C96B2 /* stories */ = {
+			isa = PBXGroup;
+			children = (
+				A3EC40111F117AAA009C96B2 /* Main.storyboard */,
+				A3EC40131F117B35009C96B2 /* Login.storyboard */,
+				A3EC401D1F117E6E009C96B2 /* Register.storyboard */,
+			);
+			name = stories;
+			sourceTree = "<group>";
+		};
+		A3EC40101F117A84009C96B2 /* Intents */ = {
+			isa = PBXGroup;
+			children = (
+				A3EC40151F117B67009C96B2 /* LoginIntent.swift */,
+				A3EC40211F117FCB009C96B2 /* Intent.swift */,
+			);
+			name = Intents;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,9 +293,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3EC40141F117B35009C96B2 /* Login.storyboard in Resources */,
+				A3EC40121F117AAA009C96B2 /* Main.storyboard in Resources */,
 				A3EC3FE91F117968009C96B2 /* LaunchScreen.storyboard in Resources */,
 				A3EC3FE61F117968009C96B2 /* Assets.xcassets in Resources */,
-				A3EC3FE41F117968009C96B2 /* Main.storyboard in Resources */,
+				A3EC401E1F117E6E009C96B2 /* Register.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,8 +322,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A3EC3FE11F117968009C96B2 /* ViewController.swift in Sources */,
 				A3EC3FDF1F117968009C96B2 /* AppDelegate.swift in Sources */,
+				A3EC40181F117BAC009C96B2 /* LoginService.swift in Sources */,
+				A3EC40161F117B67009C96B2 /* LoginIntent.swift in Sources */,
+				A3EC40221F117FCB009C96B2 /* Intent.swift in Sources */,
+				A3EC40201F117FAF009C96B2 /* RegisterViewController.swift in Sources */,
+				A3EC401C1F117BF2009C96B2 /* LoginViewController.swift in Sources */,
+				A3EC401A1F117BD8009C96B2 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,14 +364,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		A3EC3FE21F117968009C96B2 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A3EC3FE31F117968009C96B2 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		A3EC3FE71F117968009C96B2 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

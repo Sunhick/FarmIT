@@ -12,4 +12,5 @@ protocol Intent {
     // Association identifier between intent and it's corresponding storyboard.
     static var id: String { get }
     static var name: String? { get }
+    var navigateBack: Delegate? { get }
 }

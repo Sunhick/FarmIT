@@ -8,8 +8,12 @@
 
 import UIKit
 
-class MainViewController: UIViewController {
-
+class MainViewController: UIViewController, LoginDelegate {
+    
+    let TAG = String(describing: MainViewController.self)
+    
+    @IBOutlet weak var label: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -33,12 +37,13 @@ class MainViewController: UIViewController {
     */
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        print(TAG + " Prepare")
         if let segueId = segue.identifier {
             switch segueId {
             case LoginIntent.id:
-                print("login intent")
                 if let dest = segue.destination as? LoginViewController {
                     let loginIntent = LoginIntent()
+                    loginIntent.navigateBack = self
                     loginIntent.message = "data from main controller"
                     dest.intent = loginIntent
                 }
@@ -48,6 +53,19 @@ class MainViewController: UIViewController {
                 break
             }
         }
+    }
+    
+    override func unwind(for unwindSegue: UIStoryboardSegue,
+                         towardsViewController subsequentVC: UIViewController) {
+        print(TAG + " unwind")
+        if let id = unwindSegue.identifier {
+            print(TAG + id)
+        }
+    }
+    
+    func loginStatus(_ status: Bool, _ msg: String) {
+        print(TAG + " Login status delegate " + msg);
+        label?.text = msg
     }
 
 }

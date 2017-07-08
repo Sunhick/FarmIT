@@ -11,8 +11,9 @@ import Foundation
 class LoginIntent : Intent {
     
     static let name: String? = "LoginIntent";
-    static let id: String = "Login"
+    static let id: String = "Login.Segue"
     
+    var navigateBack: Delegate?
     var message: String?
     
 }

@@ -28,7 +28,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="296" height="30"/>
                                         <state key="normal" title="Login"/>
                                         <connections>
-                                            <segue destination="JNM-CQ-QxF" kind="show" id="ZRG-h7-Gac"/>
+                                            <segue destination="JNM-CQ-QxF" kind="show" identifier="Login.Segue" id="ZRG-h7-Gac"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AaR-Hk-R22">
@@ -54,6 +54,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="FarmIT" id="E3U-rB-69A"/>
+                    <connections>
+                        <outlet property="label" destination="t2R-wD-EqJ" id="RM5-Gt-Tda"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0tO-UF-4Ie" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

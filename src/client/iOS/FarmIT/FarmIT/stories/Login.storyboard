@@ -32,19 +32,30 @@
                                     </textField>
                                 </subviews>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wZw-Ok-h3E">
+                                <rect key="frame" x="166" y="74.5" width="42" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="MbQ-tX-lJR" firstAttribute="height" secondItem="Wnq-Uo-7ik" secondAttribute="height" id="9KR-SE-7tE"/>
                             <constraint firstItem="MbQ-tX-lJR" firstAttribute="centerY" secondItem="Wnq-Uo-7ik" secondAttribute="centerY" id="9oz-Qd-QH9"/>
                             <constraint firstItem="MbQ-tX-lJR" firstAttribute="centerX" secondItem="Wnq-Uo-7ik" secondAttribute="centerX" id="OkB-1Q-8au"/>
+                            <constraint firstItem="wZw-Ok-h3E" firstAttribute="centerX" secondItem="MbQ-tX-lJR" secondAttribute="centerX" id="TQC-Aa-d1r"/>
                             <constraint firstItem="MbQ-tX-lJR" firstAttribute="width" secondItem="Wnq-Uo-7ik" secondAttribute="width" id="kPi-30-iSe"/>
+                            <constraint firstItem="MbQ-tX-lJR" firstAttribute="top" secondItem="wZw-Ok-h3E" secondAttribute="top" constant="-75" id="vAF-dg-iBM"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="label" destination="wZw-Ok-h3E" id="8UT-x3-LqR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aIh-AB-TXf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="44" y="122"/>
+            <point key="canvasLocation" x="142" y="25"/>
         </scene>
     </scenes>
 </document>

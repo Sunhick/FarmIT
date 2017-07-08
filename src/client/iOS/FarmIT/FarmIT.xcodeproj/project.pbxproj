@@ -21,6 +21,9 @@
 		A3EC401E1F117E6E009C96B2 /* Register.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3EC401D1F117E6E009C96B2 /* Register.storyboard */; };
 		A3EC40201F117FAF009C96B2 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3EC401F1F117FAF009C96B2 /* RegisterViewController.swift */; };
 		A3EC40221F117FCB009C96B2 /* Intent.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3EC40211F117FCB009C96B2 /* Intent.swift */; };
+		A3EC40241F1184CF009C96B2 /* gitkeep.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3EC40231F1184CF009C96B2 /* gitkeep.swift */; };
+		A3EC402C1F119C43009C96B2 /* Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3EC402A1F119C43009C96B2 /* Delegate.swift */; };
+		A3EC402D1F119C43009C96B2 /* LoginDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3EC402B1F119C43009C96B2 /* LoginDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +64,9 @@
 		A3EC401D1F117E6E009C96B2 /* Register.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Register.storyboard; path = stories/Register.storyboard; sourceTree = "<group>"; };
 		A3EC401F1F117FAF009C96B2 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RegisterViewController.swift; path = controllers/RegisterViewController.swift; sourceTree = "<group>"; };
 		A3EC40211F117FCB009C96B2 /* Intent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Intent.swift; path = Intents/Intent.swift; sourceTree = "<group>"; };
+		A3EC40231F1184CF009C96B2 /* gitkeep.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = gitkeep.swift; path = views/gitkeep.swift; sourceTree = "<group>"; };
+		A3EC402A1F119C43009C96B2 /* Delegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Delegate.swift; path = delegates/Delegate.swift; sourceTree = "<group>"; };
+		A3EC402B1F119C43009C96B2 /* LoginDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginDelegate.swift; path = delegates/LoginDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +117,7 @@
 		A3EC3FDD1F117968009C96B2 /* FarmIT */ = {
 			isa = PBXGroup;
 			children = (
+				A3EC40251F119A14009C96B2 /* delegates */,
 				A3EC40101F117A84009C96B2 /* Intents */,
 				A3EC400F1F117A76009C96B2 /* stories */,
 				A3EC400E1F117A6E009C96B2 /* models */,
@@ -155,6 +162,7 @@
 		A3EC400D1F117A3E009C96B2 /* views */ = {
 			isa = PBXGroup;
 			children = (
+				A3EC40231F1184CF009C96B2 /* gitkeep.swift */,
 			);
 			name = views;
 			sourceTree = "<group>";
@@ -184,6 +192,15 @@
 				A3EC40211F117FCB009C96B2 /* Intent.swift */,
 			);
 			name = Intents;
+			sourceTree = "<group>";
+		};
+		A3EC40251F119A14009C96B2 /* delegates */ = {
+			isa = PBXGroup;
+			children = (
+				A3EC402A1F119C43009C96B2 /* Delegate.swift */,
+				A3EC402B1F119C43009C96B2 /* LoginDelegate.swift */,
+			);
+			name = delegates;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -323,9 +340,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				A3EC3FDF1F117968009C96B2 /* AppDelegate.swift in Sources */,
+				A3EC40241F1184CF009C96B2 /* gitkeep.swift in Sources */,
 				A3EC40181F117BAC009C96B2 /* LoginService.swift in Sources */,
+				A3EC402C1F119C43009C96B2 /* Delegate.swift in Sources */,
 				A3EC40161F117B67009C96B2 /* LoginIntent.swift in Sources */,
 				A3EC40221F117FCB009C96B2 /* Intent.swift in Sources */,
+				A3EC402D1F119C43009C96B2 /* LoginDelegate.swift in Sources */,
 				A3EC40201F117FAF009C96B2 /* RegisterViewController.swift in Sources */,
 				A3EC401C1F117BF2009C96B2 /* LoginViewController.swift in Sources */,
 				A3EC401A1F117BD8009C96B2 /* MainViewController.swift in Sources */,

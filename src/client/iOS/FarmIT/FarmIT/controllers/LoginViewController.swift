@@ -10,13 +10,19 @@ import UIKit
 
 class LoginViewController: UIViewController {
     
+    let TAG = String(describing: LoginViewController.self)
+    
     var intent: LoginIntent?
-
+    @IBOutlet weak var label: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         if let msg = intent?.message {
-            print(msg)
+            
+            print("got message:" + msg)
+            label?.text = msg
+            
         }
     }
 
@@ -35,5 +41,12 @@ class LoginViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
+    
+    override func didMove(toParentViewController parent: UIViewController?) {
+        if (parent == nil) {
+            if let receiver = intent?.navigateBack as? LoginDelegate {
+                receiver.loginStatus(true, "Authenticated")
+            }
+        }
+    }
 }

@@ -43,16 +43,15 @@ class TcpChannel implements Runnable {
             Log.d(TAG, "running thread : connect to server");
 
             try {
-                socket.connect(serverAddr, 1000);
+                socket.connect(serverAddr, 0);
                 Log.d(TAG, "connected to server");
                 writebuf = new PrintWriter(new BufferedWriter(new OutputStreamWriter(socket.getOutputStream())), true);
                 readbuf = new BufferedReader(new InputStreamReader(socket.getInputStream()));
 
-//                while (alive) {
-//                    String msg = readbuf.readLine();
-//                    Log.d(TAG, msg);
-//                }
-
+                while (alive) {
+                    String msg = readbuf.readLine();
+                    Log.d(TAG, msg);
+                }
             }
             catch (Exception e) {
                 Log.e("TCP", "S: Error", e);

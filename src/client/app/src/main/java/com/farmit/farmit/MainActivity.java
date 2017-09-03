@@ -10,6 +10,7 @@ import android.content.IntentFilter;
 import android.content.ServiceConnection;
 import android.os.Bundle;
 import android.os.IBinder;
+import android.support.annotation.NonNull;
 import android.support.v4.content.LocalBroadcastManager;
 import android.util.Log;
 import android.view.View;
@@ -35,7 +36,16 @@ public class MainActivity extends Activity {
             CommunicationService.CommunicationBinder binder = (CommunicationService.CommunicationBinder) iBinder;
             comm = binder.getService();
 
-            comm.sendMessage("Sunil.localhost.6767.");
+            new Thread(new Runnable() {
+                @Override
+                public void run() {
+                    while (true) {
+                        Log.d(TAG, "sending message");
+                        // comm.sendMessage("Sunil.localhost.6767.");
+                        break;
+                    }
+                }
+            }).start();
         }
 
         @Override
@@ -58,8 +68,8 @@ public class MainActivity extends Activity {
 
         Intent socketService = new Intent(this, CommunicationService.class);
         startService(socketService);
-        // bindService(socketService, connection, BIND_AUTO_CREATE);
-        // LocalBroadcastManager.getInstance(this).registerReceiver(receiver, new IntentFilter("AuthenticationFilter"));
+        bindService(socketService, connection, BIND_AUTO_CREATE);
+        LocalBroadcastManager.getInstance(this).registerReceiver(receiver, new IntentFilter("AuthenticationFilter"));
 
         TextView register = findViewById(R.id.register);
         register.setOnClickListener(new View.OnClickListener() {

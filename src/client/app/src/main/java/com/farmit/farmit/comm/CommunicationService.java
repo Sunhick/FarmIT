@@ -46,6 +46,7 @@ public class CommunicationService extends Service implements Communication {
     public void sendMessage(String msg) {
         // Log.d(TAG, msg);
         if (connection != null) {
+            Log.d(TAG, "sending message");
             connection.sendMessage(msg);
         }
     }
